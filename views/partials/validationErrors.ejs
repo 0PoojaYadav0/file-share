@@ -1,0 +1,10 @@
+
+<ul class="list-disc list-inside">
+    <% locals.errors.forEach(error => { %>
+        <% if (error.msg) { %>
+            <li class="text-sm"><%- error.msg %></li>
+        <% } else { %>
+            <li class="text-sm"><%- error %></li>
+        <% } %>
+    <% }) %>
+</ul>
